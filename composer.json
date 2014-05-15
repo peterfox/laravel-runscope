@@ -1,0 +1,49 @@
+{
+    "name": "peterfox/runscope",
+    "description": "This package makes using Runscope in applications easy, including Guzzle and GuzzleHttp plugin",
+    "homepage": "https://github.com/peterfox/laravel-runscope",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Runscope",
+            "homepage": "https://www.runscope.com",
+            "email": "help@runscope.com"
+        },
+        {
+            "name": "Luis Cordova",
+            "homepage": "http://craftitonline.com"
+        },
+        {
+            "name": "Peter Fox",
+            "homepage": "http://www.peterfox.me"
+        }
+    ],
+    "keywords": ["runscope", "laravel", "guzzle"],
+    "require": {
+        "php": ">=5.3.0",
+        "psr/log": "1.0.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "2.0.*@dev",
+        "monolog/monolog": "1.6.*",
+        "raulfraile/ladybug": "~1.0",
+        "guzzle/guzzle": "~3.8",
+        "guzzlehttp/guzzle": "~4.0",
+        "illuminate/support": "~4.1"
+    },
+    "suggest": {
+        "guzzle/guzzle": "~3.8",
+        "guzzlehttp/guzzle": "~4.0",
+        "illuminate/support": "~4.1"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": { "Runscope": "src/"},
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+suites:
+  guzzle-runscope:
+    namespace: Runscope\Plugin
+    src_path: src
