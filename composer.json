@@ -41,7 +41,7 @@
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-0": { "Runscope": "src/"},
+        "psr-4": { "Runscope\\": "src/"},
         "files": [
             "src/helpers.php"
         ]
