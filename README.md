@@ -38,7 +38,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Runscope\Runscope;
 use Guzzle\Http\Client;
-use Runscope\Plugin\Guzzle\RunscopePlugin.php
+use Runscope\Plugin\Guzzle\RunscopePlugin;
 
 $runscope = new Runscope('api-key-here');
 
@@ -61,7 +61,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Runscope\Runscope;
 use GuzzleHttp\Client;
-use Runscope\Plugin\GuzzleHttpRunscopePlugin.php
+use Runscope\Plugin\GuzzleHttp\RunscopePlugin;
 
 $runscope = new Runscope('api-key-here');
 
@@ -70,7 +70,7 @@ $client = new Client('https://api.github.com');
 $runscopePlugin = new RunscopePlugin($runscope);
 
 // Attach the plugin
-$client->getEmitter()->attach($runscope);
+$client->getEmitter()->attach($runscopePlugin);
 
 // Send the request and get the response
 $response = $client->get('/');
