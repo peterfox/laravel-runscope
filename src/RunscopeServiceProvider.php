@@ -38,7 +38,7 @@ class RunscopeServiceProvider extends ServiceProvider
             $config = $app->config->get('runscope::config', false) ? : $app->config->get('runscope');
 
             return new \Runscope\Runscope(
-                $config['bucket'],
+                $config['bucket_key'],
                 $config['auth_token'],
                 $config['gateway_host']
             );
