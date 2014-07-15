@@ -25,21 +25,15 @@ class Runscope
         return $this->authToken;
     }
     
-	/**
-	 * @param $bucketKey
-	 */
-	public function setBucketKey($bucketKey)
-	{
-		$this->bucketKey = $bucketKey;
-	}
+    public function setBucketKey($bucketKey)
+    {
+        $this->bucketKey = $bucketKey;
+    }
 
-	/**
-	 * @return mixed
-	 */
-	public function getBucketKey()
-	{
-		return $this->bucketKey;
-	}
+    public function getBucketKey()
+    {
+        return $this->bucketKey;
+    }
 
     public function proxify($originalUrl)
     {
