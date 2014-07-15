@@ -94,13 +94,13 @@ You can then publish the config file from the package:
 php artisan config:publish peterfox/runscope
 ```
 
-The blank config will at a minimum require your bucket ID:
+The blank config will at a minimum require your bucket key (ID):
 
 ```php
 <?php
 
 return array(
-    'bucket' => '',
+    'bucket_key' => '',
     'auth_token' => null,
     'gateway_host' => 'runscope.net'
 );
