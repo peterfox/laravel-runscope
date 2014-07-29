@@ -34,7 +34,7 @@ class RunscopeServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('Runscope\Runscope', function ($app, $parameters) {
+        $this->app->singleton('Runscope\Runscope', function ($app, $parameters) {
             $config = $app->config->get('runscope::config', false) ? : $app->config->get('runscope');
 
             return new \Runscope\Runscope(
