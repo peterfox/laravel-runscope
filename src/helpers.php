@@ -11,6 +11,6 @@ if (function_exists('app') && !function_exists('runscope_url')) {
     {
         $runscope = app()->make('Runscope\Runscope');
 
-        return $runscope->proxify($url)[0];
+        return $runscope->getProxifiedUrl($url);
     }
 }
