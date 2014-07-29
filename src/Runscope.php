@@ -73,6 +73,11 @@ class Runscope
         return array($resultUrl, $port);
     }
 
+    public function getProxifiedUrl($originalUrl)
+    {
+        return $this->proxify($originalUrl)[0];
+    }
+
     const HTTP_URL_REPLACE = 1; // Replace every part of the first URL when there's one of the second URL
     const HTTP_URL_JOIN_PATH = 2; // Join relative paths
     const HTTP_URL_JOIN_QUERY = 4; // Join query strings
